@@ -1,0 +1,63 @@
+.Finsh-section {
+    background-color: $span-h1-color-bg;
+}
+
+.finsh__box {
+    padding-top: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+
+    h2 {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #012F34;
+        text-align: center;
+        &:hover {
+            color:$h1-h2_hover ;
+            transform: $transform_;
+            transition: $transition-;
+        }
+
+        &:active {
+            color: blue ;
+            transform: $transform_;
+            transition: $transition-;
+        }
+    }
+
+    .finsh__btn {
+        padding: 10px 32px;
+        border-radius: $btn-radus;
+        background-color: $span-h1-color-bg;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        &:hover {
+            color: $h1-h2_hover ;
+            transform: $transform_;
+            transition: $transition-;
+            background-color: #fff;
+        }
+
+        &:active {
+            color: $h1-h2_active;
+            transform: $transform_;
+            transition: $transition-;
+        }
+    }
+}
+
+// media 
+@media screen and (max-width: 768px) {
+    .finsh__box {
+        flex-direction: column;
+        row-gap: 33px;
+    }
+}

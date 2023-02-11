@@ -1,0 +1,137 @@
+.intro-section {
+    // position: relative;
+    background-color: $footer-bg;
+}
+// .intro__grup8-1{
+//     position: absolute;
+//     left: 92%;
+//     top: 66%;
+// }
+.intro__box {
+    padding: 140px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__title {
+    h1 {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+        margin-top: 54px;
+        max-width: 445px;
+        &:hover {
+            color: $h1-h2_active;
+            transform: $transform_;
+            transition: $transition-;
+        }
+
+        &:active {
+            color: $h1-h2_hover ;
+            transform: $transform_;
+            transition: $transition-;
+        }
+    }
+
+    .intro__line {
+        width: 50px;
+        height: 4px;
+        background: #F67E7E;
+    }
+}
+
+.intro__navbar {
+    margin-top: 58px;
+}
+
+.intro__seting {
+    display: flex;
+    row-gap: 32px;
+    img{
+        &:hover {
+            border: $border_hover;
+            transform: $transform_;
+            transition: $transition-;
+        }
+
+        &:active {
+            border: $border_activ;
+            transform: $transform_;
+            transition: $transition-;
+        }
+    }
+
+    ul {
+        margin-left: 23px;
+
+        li {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            color: $span-h1-color-bg;
+            padding: 32px 0 16px;
+            &:hover {
+                color: $h1-h2_active;
+                transform: $transform_;
+                transition: $transition-;
+            }
+    
+            &:active {
+                color: $h1-h2_hover ;
+                transform: $transform_;
+                transition: $transition-;
+            }
+        }
+
+        p {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            max-width: 445px;
+        }
+    }
+
+}
+
+
+// media-deckop-tablet
+
+@media screen and (max-width: 1024px){
+    .intro__box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro__title{
+      h1{
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+} 
+//  media-mobile
+
+@media screen and (max-width: 481px){
+    
+    .intro__seting{
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: center;
+        ul{
+            align-items: center;
+            text-align: center;
+            li{
+                padding: 0;
+            }
+        }
+    }
+} 

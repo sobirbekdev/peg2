@@ -1,0 +1,145 @@
+.medium-section {
+    background-color: $headeer-bg;
+}
+
+.medium__box {
+    padding: 140px 0;
+
+    h1 {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 982px;
+
+        &:hover {
+            color: $h1-h2_active;
+            transform: $transform_;
+            transition: $transition-;
+        }
+
+        &:active {
+            color: $h1-h2_hover ;
+            transform: $transform_;
+            transition: $transition-;
+        }
+    }
+
+    .medium__span {
+        color: #79C8C7;
+
+        &:hover {
+            color: $h1-h2_active;
+            transform: $transform_;
+            transition: $transition-;
+        }
+
+        &:active {
+            color: $h1-h2_hover ;
+            transform: $transform_;
+            transition: $transition-;
+        }
+    }
+}
+
+.medum__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.medium__navbar {
+    margin-top: 92px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 350px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+
+        h2 {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: #79C8C7;
+
+            &:hover {
+                color: $h1-h2_active;
+                transform: $transform_;
+                transition: $transition-;
+            }
+
+            &:active {
+                color: $h1-h2_hover ;
+                transform: $transform_;
+                transition: $transition-;
+            }
+
+        }
+
+        li {
+            font-family: 'Livvic';
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 2px 0 32px;
+
+            &:hover {
+                color: $h1-h2_active;
+                transform: $transform_;
+                transition: $transition-;
+            }
+
+            &:active {
+                color: $h1-h2_hover ;
+                transform: $transform_;
+                transition: $transition-;
+            }
+
+        }
+
+        img {
+            &:hover {
+                border: $border_hover;
+                transform: $transform_;
+                transition: $transition-;
+            }
+
+            &:active {
+                border: $border_activ;
+                transform: $transform_;
+                transition: $transition-;
+            }
+        }
+    }
+}
+
+// media 
+
+@media screen and (max-width: 768px) {
+    .medum__card {
+        flex-direction: column;
+    }
+}
